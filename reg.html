@@ -16,50 +16,40 @@
     <hr>
     <div>
         <big>
-            <form action="input.php">
+            <form action="sucreg.html">
                 <h1>Please Fill the bellow Form</h1><br>
-                <span>Enter your name:-</span>
-                <input type="Name"><br><br>
-                <span>Father's Name:-</span>
-                <input type="Name"><br><br>
-                <span>Mother's Name:-</span>
-                <input type="Name"><br><br>
-                <span>Address :-</span>
-                <input type="Name"><br><br>
-            </form>
-        </big>
-    </div>
-    <br>
-    <div>
-        <big>
-            <form action="">
-                <span>Select your Class</span><br>
+                <span>Enter your name* :-</span>
+                <input type="Name" required><br><br>
+                <span>Father's Name* :-</span>
+                <input type="Name" required><br><br>
+                <span>Mother's Name* :-</span>
+                <input type="Name" required><br><br>
+                <span>Address* :-</span>
+                <input type="Name" required><br><br>
+                <span>Select your Class* </span><br>
                 <label for="sectionida">
-                    <input type="radio" value="10th" name="section" id="sectionida"> 10th
+                    <input type="radio" value="10th" name="section" id="sectionida" required> 10th
                 </label>
                 <label for="sectionidb">
-                    <input type="radio" value="11th" name="section" id="sectionidb"> 12th
+                    <input type="radio" value="11th" name="section" id="sectionidb" required> 12th
                 </label>
                 <label for="sectionidc">
-                    <input type="radio" value="12th" name="section" id="sectionidc"> 11th
+                    <input type="radio" value="12th" name="section" id="sectionidc" required> 11th
                 </label>
-            </form>
-        </big>
-    </div>
-    <br>
-    <div>
-        <big>
-            <span>Date of birth :</span>
-            <input type="date" name="dob" id=""><br><br>
-            <span>Upload your marksheet of previous class :</span>
-            <input type="file" name="marksheet" id=""><br><br>
+                <br><br>
+            <span>Date of birth* :</span>
+            <input type="date" name="dob" id="" required><br><br>
+            <span>Upload your marksheet of previous class* :</span>
+            <input type="file" name="marksheet" id="" required><br><br>
             <span>Enter your email address:</span>
             <input type="email" name="" id=""><br><br>
             <span>Enter Telephone Number:</span>
             <input type="tel" name="" id=""><br><br>
+            <input type="submit" placeholder="Login" >
+        </form>
         </big>
     </div>
-    <div>
+    <!-- <div>
         <big>
             <button>
                 <span>
@@ -67,7 +57,7 @@
                 </span>
             </button>
         </big>
-    </div>
+    </div> -->
 </body>
 
 </html>
