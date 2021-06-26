@@ -1,0 +1,83 @@
+#intro .first em {
+    color: pink;
+    background-color: gray;
+    font-size: 30pt; 
+}
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 20pt;
+}
+table {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    font-size: 30pt;
+}
+p.serif {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: overline;
+}
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: overline;
+}
+p.monospace {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+}
+p.cursive {
+    font-family: Florence,cursive;
+    text-decoration: overline;
+}
+p.fantasy {
+    font-family: fantasy;
+    text-decoration: overline;
+}
+body {
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+a {
+    background-color: rgb(183, 226, 166);
+    color: black;
+}
+h1 {
+    background-color: rgb(183, 226, 166);
+    color: black;
+}
+button {
+    background-color: rgb(183, 226, 166);
+    border: 3ch;
+}
+li {
+    color: rgb(43, 255, 0);
+}
+.mid {
+    text-align: center;
+    font-size: 30pt;
+}
+.lam {
+    font-size: 20pt;
+    text-align: center;
+    background-color: rgb(114, 94, 94);
+}
+.top {
+    vertical-align: top;
+}
+.middle {
+    vertical-align: middle;
+}
+.bottom {
+    vertical-align: bottom;
+}
+p.serif {
+    color: white;
+    font-size: 50pt;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0),-1px -1px 2px rgb(255, 0, 0);
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
