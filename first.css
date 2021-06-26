@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+a {
+    background-color: rgb(183, 226, 166);
+    color: black;
+}
+h1 {
+    background-color: rgb(183, 226, 166);
+    color: black;
+}
+button {
+    background-color: rgb(183, 226, 166);
+    border: 3ch;
+}
+li {
+    color: rgb(43, 255, 0);
+}
+.mid {
+    text-align: center;
+    font-size: 30pt;
+}
+.lam {
+    font-size: 20pt;
+    text-align: center;
+    background-color: rgb(114, 94, 94);
+}
