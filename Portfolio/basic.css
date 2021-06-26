@@ -1,0 +1,50 @@
+p.font15 
+{
+    font-size: 30pt;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.centre
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+.name 
+{
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 40pt;
+}
+
+div
+{ 
+    text-align: center; 
+    margin-left: auto;
+    font-size: 30pt;
+}
+
+ul 
+{ 
+    display: inline-block; 
+    text-align: left; 
+}
+.footer 
+{
+    font-size: 15pt;
+}
+
+img
+{
+    display: block;
+    margin-right: auto;
+    width:100%;
+
+}
+
+span 
+{
+    text-align: center; 
+    align-items: center;
+}
