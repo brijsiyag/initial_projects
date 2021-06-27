@@ -2,7 +2,7 @@ p.font15
 {
     font-size: 30pt;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(70, 209, 209);
 }
 .centre
 {
@@ -11,10 +11,10 @@ p.font15
     margin-right: auto;
     width: 8%;
 }
-.name 
+h1.name 
 {
     text-align: center; 
-    color: rgb(0, 0, 0);
+    color: rgb(80, 184, 177);
     font-size: 40pt;
 }
 
@@ -47,4 +47,15 @@ span
 {
     text-align: center; 
     align-items: center;
+}
+border {
+    border: 4px;
+    border-bottom: 4px;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-top-width: 10px;
+    width: 10%;
+    color: rgb(131, 131, 131);
 }
