@@ -59,3 +59,13 @@ hr{
     width: 10%;
     color: rgb(131, 131, 131);
 }
+.ho1 {
+    width: 80px;
+}
+.ho {
+    width: 50px;
+}
+
+h1:hover{
+    color: teal;
+}
