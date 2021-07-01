@@ -140,6 +140,7 @@ h3{
     text-align: center;
     color: white;
     line-height: 2 !important;
+    height: 80vh;
   }
 
 #press{
@@ -181,8 +182,29 @@ h3{
 
 #cta{
     text-align: center;
+    background-color: #ff4c68;
+    padding: 7% 5%;
+    margin-bottom: 5%;
 }
 
 #footer{
     text-align: center;
+    padding-bottom: 3%;
+}
+
+.cta-heading{
+    color: white;
+    font-family: "Montserrat-bold";
+    font-size: 4rem !important;
+    width: 70%;
+    margin: auto;
+}
+
+.download-btn-cta{
+    font-size: 2rem !important;
+    margin: 5% 5% 5%;
+}
+
+.fa{
+    padding: 10px;
 }
