@@ -1,0 +1,71 @@
+.heading{
+    color: #5F939A;
+    padding: 3% 0 0 0;
+    margin: 0;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 15vh !important;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #FAEBE0;
+    text-align: center;
+    background-image: url(images/funky-lines.png);
+    background-repeat: repeat-y repeat-x;
+} 
+
+
+.btn{
+    font-size: 3rem !important;
+    padding: 0 40px 0 40px !important;
+    width: 10% !important;
+}
+
+#dice-change{
+    width: 30% !important;
+    padding: 50px;
+}
+.casino-1{
+    width: 10%;
+    padding: 0;
+}
+
+.casino-2{
+    width: 2%;
+}
+.roulette{
+    width: 2%;
+}
+
+
+@media (max-width:900px) {
+    body{
+        background-color: #FAEBE0;
+        text-align: center;
+        background-image: url(images/funky-lines.png);
+        background-repeat: repeat-y repeat-x;
+    }
+
+    .heading{
+        color: #5F939A;
+        padding: 3% 0 0 0;
+        margin: 0 auto;
+    }
+    #dice-change{
+        width: 90% !important;
+        padding: 50px;
+    }
+    .casino-1{
+        width: 20%;
+        padding: 0;
+    }
+
+    .casino-2{
+        width: 10%;
+    }
+    .roulette{
+        width: 10%;
+    }
+}

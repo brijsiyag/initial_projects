@@ -16,7 +16,7 @@
 }
 .download-btn{
     font-size: 1.5rem !important;
-    padding: 10px 30px !important;
+    padding: 10px 30px 10px 0 !important;
 }
 .discription{
     font-size: 4rem !important; 
@@ -136,12 +136,10 @@ h3{
 
 #testimonials{
     background-color: #ef8172;
-
     text-align: center;
     color: white;
     line-height: 2 !important;
-    height: 80vh;
-  }
+}
 
 #press{
     background-color: #ef8172;
