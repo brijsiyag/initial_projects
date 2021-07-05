@@ -5,7 +5,7 @@
 }
 h1{
     font-family: 'Anton', sans-serif;
-    font-size: 10vh !important;
+    font-size: 15vh !important;
     padding: 0;
     margin: 0;
 }
@@ -47,7 +47,12 @@ body{
         background-image: url(images/funky-lines.png);
         background-repeat: repeat-y repeat-x;
     }
-
+    h1{
+        font-family: 'Anton', sans-serif;
+        font-size: 10vh !important;
+        padding: 0;
+        margin: 0;
+    }
     .heading{
         color: #5F939A;
         padding: 3% 0 0 0;
