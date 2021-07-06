@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: rgb(76, 75, 76);
     background-image: url(images/background.png);
     background-repeat: repeat-x repeat-y;
     font-family: 'Otomanopee One', sans-serif !important;
@@ -14,8 +15,18 @@ body{
 
 .btn{
     border: black 2px solid !important;
+    background-color: rgb(105, 105, 105) !important; 
+    color: white !important;
 }
 
+
+.element-plus,.element-minus,.element-multiply,.element-divide,.element-equal{
+    background-color: rgb(242, 163, 60) !important;
+}
+
+.element-clear,.element-open,.element-close{
+    background-color: rgb(76, 75, 76) !important;
+}
 
 .footer{
     position: absolute;
@@ -34,7 +45,6 @@ body{
     text-align: center;
     width: 40%;
     margin: auto !important;
-    background-color: rgb(175, 255, 218);
     }
 
     .col-sm-3{
@@ -44,6 +54,8 @@ body{
     }
 
     .display{
+        background-color: rgb(56, 56, 56);
+        color: white;
         height: 20vh;
         border: rgb(80, 80, 211) 2px solid;
         font-size: 2rem;
@@ -60,7 +72,6 @@ body{
     .row{
         width: 100wh !important;
         margin: auto 30px !important;
-        background-color: rgb(175, 255, 218);
     }
     
     .col-sm-3{
@@ -70,6 +81,8 @@ body{
     }
     
     .display{
+        background-color: rgb(56, 56, 56);
+        color: white;
         height: 20vh !important;
         border: rgb(80, 80, 211) 2px solid !important;
         font-size: 2rem !important;
