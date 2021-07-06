@@ -50,7 +50,20 @@
         position: static;
         /* z-index: 1; */
     }
+    .btn-container{
+        margin: auto;
+        text-align: center;
+    }
 
+    .btn{
+        margin: 20px;
+    }
+
+    .title-row .col-lg-6 {
+        margin: auto;
+        text-align: center;
+        padding: 5%;
+    }
 }
 
 .navbar-brand{
