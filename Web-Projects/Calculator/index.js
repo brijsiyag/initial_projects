@@ -1,5 +1,4 @@
 
-
 var main = "";
 document.querySelector(".display").innerText = main;
 // for(var i = 0;i<10;i++){
@@ -59,24 +58,44 @@ document.querySelector(".element-0").addEventListener("click",function () {
 
 document.querySelector(".element-plus").addEventListener("click",function () {
     if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
-    {
+    main += "+";
+    else{
+        main = main.slice(0,main.length-1);
         main += "+";
     }
     document.querySelector(".display").innerText = main;
 });
+
+
 document.querySelector(".element-minus").addEventListener("click",function () {
     if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
     main += "-";
+    else{
+        main = main.slice(0,main.length-1);
+        main += "-";
+    }
     document.querySelector(".display").innerText = main;
 });
+
+
 document.querySelector(".element-multiply").addEventListener("click",function () {
     if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
     main += "*";
+    else{
+        main = main.slice(0,main.length-1);
+        main += "*";
+    }
     document.querySelector(".display").innerText = main;
 });
+
+
 document.querySelector(".element-divide").addEventListener("click",function () {
     if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
     main += "/";
+    else{
+        main = main.slice(0,main.length-1);
+        main += "/";
+    }
     document.querySelector(".display").innerText = main;
 });
 
