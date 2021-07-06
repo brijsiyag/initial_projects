@@ -130,5 +130,6 @@ document.querySelector(".element-equal").addEventListener("click",equal);
 
 function equal() {
     main = eval(main);
+    main += "";
     document.querySelector(".display").innerText = main;
 }
