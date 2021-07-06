@@ -10,7 +10,6 @@ document.querySelector(".display").innerText = main;
 //     });
 // }
 
-{
 document.querySelector(".element-1").addEventListener("click",function () {
     main += document.querySelector(".element-1").innerText;
     document.querySelector(".display").innerText = main;
@@ -127,7 +126,6 @@ document.querySelector(".element-dot").addEventListener("click",function () {
 });
 
 document.querySelector(".element-equal").addEventListener("click",equal);
-}
 
 
 function equal() {
