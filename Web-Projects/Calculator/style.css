@@ -1,8 +1,8 @@
 body{
     text-align: center;
-    background-color: rgb(76, 75, 76);
-    background-image: url(images/background.png);
-    background-repeat: repeat-x repeat-y;
+    /* background-image: url(images/background.png); */
+    /* background-repeat: repeat-x repeat-y; */
+    background-color: rgb(227, 247, 255) !important;
     font-family: 'Otomanopee One', sans-serif !important;
 }
 
@@ -57,7 +57,7 @@ body{
         background-color: rgb(56, 56, 56);
         color: white;
         height: 20vh;
-        border: rgb(80, 80, 211) 2px solid;
+        border: rgb(93, 255, 87) 2px solid;
         font-size: 2rem;
         text-align: right;
     }
