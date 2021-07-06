@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+    width: 40%;
+    margin: auto !important;
+}
+
+.col-sm-3{
+    border: black 2px solid;
+    font-size: 3rem !important;
+}
+
+.display{
+    height: 20vh;
+    border: rgb(80, 80, 211) 2px solid;
+    font-size: 2rem;
+    text-align: right;
+
+}
+
+.container{
+    width: 100wh;
+    margin: 10% auto !important;
+}
