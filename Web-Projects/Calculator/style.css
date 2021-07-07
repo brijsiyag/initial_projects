@@ -28,6 +28,11 @@ body{
     background-color: rgb(76, 75, 76) !important;
 }
 
+.mute{
+    width: 30px;
+    margin: auto;
+}
+
 .footer{
     position: absolute;
     bottom: 0;
