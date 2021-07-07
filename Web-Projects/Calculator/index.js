@@ -8,7 +8,8 @@ for(var i = 0;i<document.querySelectorAll(".btn").length;i++){
 document.querySelectorAll(".btn")[i].addEventListener("click",function () {
     if(document.querySelector(".mute").getAttribute("src") != "images/mute.png")
     {
-    audio.play();
+        audio = new Audio("Audio/beep.m4a");
+        audio.play();
     }
 });
 }
