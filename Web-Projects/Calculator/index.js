@@ -10,11 +10,16 @@
 // 18 = (
 // 19 = clear
 
+// const AudioContext = window.AudioContext || window.webkitAudioContext;
+// const audioCtx = new AudioContext();
 
 var main = "";
 document.querySelector(".display").innerText = main;
 
 document.addEventListener("keypress",function (event) {
+    audio = new Audio("Audio/beep.m4a");
+    audio.play();
+
     if((event.key>=0 && event.key <=9) || (['+','-','*','/','(',')','.'].includes(event.key)))
     {
         main += event.key;
