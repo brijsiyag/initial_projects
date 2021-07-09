@@ -16,7 +16,7 @@
 //Button Click Sound
 
 
-var audio = new Audio("Audio/beep.m4a");
+var audio = new Audio("Audio/beep.mp3");
 
 
 for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
@@ -27,7 +27,7 @@ for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
             x.classList.remove("pressed");
         },100);
         if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
-            audio = new Audio("Audio/beep.m4a");
+            audio = new Audio("Audio/beep.mp3");
             audio.play();
         }
     });
@@ -39,7 +39,7 @@ document.querySelector(".mute").addEventListener("click", mute_unmute);
 function mute_unmute() {
     if (document.querySelector(".mute").getAttribute("src") == "images/mute.png") {
         document.querySelector(".mute").setAttribute("src", "images/volume.png");
-        audio = new Audio("Audio/beep.m4a");
+        audio = new Audio("Audio/beep.mp3");
         audio.play();
     }
     else {
@@ -57,7 +57,7 @@ document.querySelector(".display").innerText = main;
 
 document.addEventListener("keypress",function (event) {
     if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
-        audio = new Audio("Audio/beep.m4a");
+        audio = new Audio("Audio/beep.mp3");
         audio.play();
     }
     var x;
