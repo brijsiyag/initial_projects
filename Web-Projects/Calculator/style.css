@@ -6,6 +6,10 @@ body{
     font-family: 'Otomanopee One', sans-serif !important;
 }
 
+.pressed{
+    opacity: 0.5;
+    box-shadow: black 2px 2px;
+}
 
 .container{
     width: 100wh;

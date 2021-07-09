@@ -10,6 +10,45 @@
 // 18 = (
 // 19 = clear
 
+
+
+
+//Button Click Sound
+
+
+var audio = new Audio("Audio/beep.m4a");
+
+
+for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
+    document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+        var x = this;
+        this.classList.add("pressed");
+        setTimeout(function() {
+            x.classList.remove("pressed");
+        },100);
+        if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
+            audio = new Audio("Audio/beep.m4a");
+            audio.play();
+        }
+    });
+}
+
+document.querySelector(".mute").addEventListener("click", mute_unmute);
+
+
+function mute_unmute() {
+    if (document.querySelector(".mute").getAttribute("src") == "images/mute.png") {
+        document.querySelector(".mute").setAttribute("src", "images/volume.png");
+        audio = new Audio("Audio/beep.m4a");
+        audio.play();
+    }
+    else {
+        document.querySelector(".mute").setAttribute("src", "images/mute.png");
+        audio = new Audio("");
+    }
+}
+
+
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioCtx = new AudioContext();
 
@@ -17,8 +56,60 @@ var main = "";
 document.querySelector(".display").innerText = main;
 
 document.addEventListener("keypress",function (event) {
-    audio = new Audio("Audio/beep.m4a");
-    audio.play();
+    if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
+        audio = new Audio("Audio/beep.m4a");
+        audio.play();
+    }
+    var x;
+    if(["Backspace",'(',')','.','+','-','*','/','c'].includes(event.key))
+    {
+        x = ".element-";
+        switch(event.key)
+        {
+        case "Backspace":
+        {
+            x += "19";
+            break;
+        }
+        case "c":
+        {
+            x += "19";
+            break;
+        }
+        case "(":
+            x += "18";
+            break;
+        case ")":
+            x += "17";
+            break;
+        case "/":
+            x += "16";
+            break;
+        case "*":
+            x += "15";
+            break;
+        case "-":
+            x += "14";
+            break;
+        case "+":
+            x += "13";
+            break;
+        case "=":
+            x += "12";
+            break;
+        case ".":
+            x += "10";
+            break;
+        }
+        x = document.querySelector(x);
+    }
+    else {
+        x = document.querySelector(".element-"+event.key);
+    }
+    x.classList.add("pressed");
+    setTimeout(function() {
+        x.classList.remove("pressed");
+    },100);
 
     if((event.key>=0 && event.key <=9) || (['+','-','*','/','(',')','.'].includes(event.key)))
     {
@@ -32,6 +123,10 @@ document.addEventListener("keypress",function (event) {
     else if(event.key == "Backspace")
     {
         element_19();
+    }
+    else if(event.key == 'c')
+    {
+        allClear();
     }
 
 });
@@ -84,43 +179,16 @@ function element_12() {
     document.querySelector(".display").innerText = main;
 }
 
-
-document.querySelector(".element-19").addEventListener("dblclick", function () {
+function allClear() {
     main = "";
     document.querySelector(".display").innerText = main;
-});
-
-
-
-
-
-
-//Button Click Sound
-
-
-var audio = new Audio("Audio/beep.m4a");
-
-
-for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
-    document.querySelectorAll(".btn")[i].addEventListener("click", function () {
-        if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
-            audio = new Audio("Audio/beep.m4a");
-            audio.play();
-        }
-    });
 }
 
-document.querySelector(".mute").addEventListener("click", mute_unmute);
+
+document.querySelector(".element-19").addEventListener("dblclick", allClear);
 
 
-function mute_unmute() {
-    if (document.querySelector(".mute").getAttribute("src") == "images/mute.png") {
-        document.querySelector(".mute").setAttribute("src", "images/volume.png");
-        audio = new Audio("Audio/beep.m4a");
-        audio.play();
-    }
-    else {
-        document.querySelector(".mute").setAttribute("src", "images/mute.png");
-        audio = new Audio("");
-    }
-}
+
+
+
+
