@@ -14,18 +14,34 @@
 var main = "";
 document.querySelector(".display").innerText = main;
 
+document.addEventListener("keypress",function (event) {
+    if((event.key>=0 && event.key <=9) || (['+','-','*','/','(',')','.'].includes(event.key)))
+    {
+        main += event.key;
+        document.querySelector(".display").innerText = main;
+    }
+    else if(event.key == '=')
+    {
+        element_12();
+    }
+    else if(event.key == "Backspace")
+    {
+        element_19();
+    }
 
-
+});
 
 for (var i = 0; i < 20; i++) {
-        var elementSelector = ".element-" + i;
+        callButton(i);
+    }
+
+function callButton(i) {
+    var elementSelector = ".element-" + i;
         if (i == 11 || i == 19 || i == 12) {
             var funCall = "element_" + i;
             document.querySelector(elementSelector).addEventListener("click", window[funCall]);
         }
         else {
-
-
             document.querySelector(elementSelector).addEventListener("click", function () {
                 if (this.innerText == '+' || this.innerText == '-' || this.innerText == '*' || this.innerText == '/') {
                     if (main[main.length - 1] != "+" && main[main.length - 1] != "-" && main[main.length - 1] != "*" && main[main.length - 1] != "/") {
@@ -42,9 +58,7 @@ for (var i = 0; i < 20; i++) {
                 document.querySelector(".display").innerText = main;
             });
         }
-    }
-
-
+}
 
 function element_11() {
     if (main[0] != "-") {
