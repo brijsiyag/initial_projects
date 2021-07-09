@@ -10,8 +10,8 @@
 // 18 = (
 // 19 = clear
 
-// const AudioContext = window.AudioContext || window.webkitAudioContext;
-// const audioCtx = new AudioContext();
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
 
 var main = "";
 document.querySelector(".display").innerText = main;
