@@ -1,179 +1,107 @@
+// 1 9 == 1 - 9
+// 10 = .
+// 11 = +/-
+// 12 = equal
+// 13 = +
+// 14 = -
+// 15 = *
+// 16 = /
+// 17 = )
+// 18 = (
+// 19 = clear
 
-var audio = new Audio("Audio/beep.m4a");
 
 var main = "";
 document.querySelector(".display").innerText = main;
 
-for(var i = 0;i<document.querySelectorAll(".btn").length;i++){
-document.querySelectorAll(".btn")[i].addEventListener("click",function () {
-    if(document.querySelector(".mute").getAttribute("src") != "images/mute.png")
-    {
-        audio = new Audio("Audio/beep.m4a");
-        audio.play();
+
+
+
+for (var i = 0; i < 20; i++) {
+        var elementSelector = ".element-" + i;
+        if (i == 11 || i == 19 || i == 12) {
+            var funCall = "element_" + i;
+            document.querySelector(elementSelector).addEventListener("click", window[funCall]);
+        }
+        else {
+
+
+            document.querySelector(elementSelector).addEventListener("click", function () {
+                if (this.innerText == '+' || this.innerText == '-' || this.innerText == '*' || this.innerText == '/') {
+                    if (main[main.length - 1] != "+" && main[main.length - 1] != "-" && main[main.length - 1] != "*" && main[main.length - 1] != "/") {
+                        main += this.innerText;
+                    }
+                    else {
+                        main = main.slice(0, main.length - 1);
+                        main += this.innerText;
+                    }
+                }
+                else {
+                    main += this.innerText;
+                }
+                document.querySelector(".display").innerText = main;
+            });
+        }
     }
-});
-}
-document.querySelector(".element-1").addEventListener("click",function () {
-    main += document.querySelector(".element-1").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-2").addEventListener("click",function () {
-    main += document.querySelector(".element-2").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-3").addEventListener("click",function () {
-    main += document.querySelector(".element-3").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-4").addEventListener("click",function () {
-    main += document.querySelector(".element-4").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-5").addEventListener("click",function () {
-    main += document.querySelector(".element-5").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-6").addEventListener("click",function () {
-    main += document.querySelector(".element-6").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-7").addEventListener("click",function () {
-    main += document.querySelector(".element-7").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-8").addEventListener("click",function () {
-    main += document.querySelector(".element-8").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-9").addEventListener("click",function () {
-    main += document.querySelector(".element-9").innerText;
-    document.querySelector(".display").innerText = main;
-});
-document.querySelector(".element-0").addEventListener("click",function () {
-    main += document.querySelector(".element-0").innerText;
-    document.querySelector(".display").innerText = main;
-});
 
 
 
-
-
-
-
-document.querySelector(".element-plus").addEventListener("click",function () {
-    if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
-    main += "+";
-    else{
-        main = main.slice(0,main.length-1);
-        main += "+";
-    }
-    document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-minus").addEventListener("click",function () {
-    if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
-    main += "-";
-    else{
-        main = main.slice(0,main.length-1);
-        main += "-";
-    }
-    document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-multiply").addEventListener("click",function () {
-    if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
-    main += "*";
-    else{
-        main = main.slice(0,main.length-1);
-        main += "*";
-    }
-    document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-divide").addEventListener("click",function () {
-    if(main[main.length-1] != "+" && main[main.length-1] != "-" && main[main.length-1] != "*" && main[main.length-1] != "/")
-    main += "/";
-    else{
-        main = main.slice(0,main.length-1);
-        main += "/";
-    }
-    document.querySelector(".display").innerText = main;
-});
-
-
-
-
-
-document.querySelector(".element-plus-minus").addEventListener("click",function () {
-    if(main[0] != "-")
-    {
+function element_11() {
+    if (main[0] != "-") {
         main = "-" + main;
     }
-    else{
-        main = main.slice(1,main.length);
+    else {
+        main = main.slice(1, main.length);
     }
     document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-open").addEventListener("click",function () {
-    main += document.querySelector(".element-open").innerText;
+}
+function element_19() {
+    main = main.slice(0, main.length - 1);
     document.querySelector(".display").innerText = main;
-});
-
-
-
-document.querySelector(".element-close").addEventListener("click",function () {
-    main += document.querySelector(".element-close").innerText;
-    document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-clear").addEventListener("click",function () {
-    main = main.slice(0,main.length-1);
-    document.querySelector(".display").innerText = main;
-});
-
-document.querySelector(".element-clear").addEventListener("dblclick",function () {
-    main = "";
-    document.querySelector(".display").innerText = main;
-});
-
-
-document.querySelector(".element-dot").addEventListener("click",function () {
-    main += document.querySelector(".element-dot").innerText;
-    document.querySelector(".display").innerText = main;
-});
-
-document.querySelector(".element-equal").addEventListener("click",equal);
-
-
-function equal() {
+}
+function element_12() {
     main = eval(main);
     main += "";
     document.querySelector(".display").innerText = main;
 }
 
 
+document.querySelector(".element-19").addEventListener("dblclick", function () {
+    main = "";
+    document.querySelector(".display").innerText = main;
+});
 
 
 
 
 
-document.querySelector(".mute").addEventListener("click",mute_unmute);
+
+//Button Click Sound
+
+
+var audio = new Audio("Audio/beep.m4a");
+
+
+for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
+    document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+        if (document.querySelector(".mute").getAttribute("src") != "images/mute.png") {
+            audio = new Audio("Audio/beep.m4a");
+            audio.play();
+        }
+    });
+}
+
+document.querySelector(".mute").addEventListener("click", mute_unmute);
 
 
 function mute_unmute() {
-    if(document.querySelector(".mute").getAttribute("src") == "images/mute.png"){
-        document.querySelector(".mute").setAttribute("src","images/volume.png");
+    if (document.querySelector(".mute").getAttribute("src") == "images/mute.png") {
+        document.querySelector(".mute").setAttribute("src", "images/volume.png");
         audio = new Audio("Audio/beep.m4a");
         audio.play();
     }
     else {
-        document.querySelector(".mute").setAttribute("src","images/mute.png");
+        document.querySelector(".mute").setAttribute("src", "images/mute.png");
         audio = new Audio("");
     }
 }
