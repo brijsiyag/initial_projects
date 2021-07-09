@@ -61,7 +61,7 @@ document.addEventListener("keypress",function (event) {
         audio.play();
     }
     var x;
-    if(["Backspace",'(',')','.','+','-','*','/','c'].includes(event.key))
+    if(["Backspace",'(',')','.','+','-','*','/','c','='].includes(event.key))
     {
         x = ".element-";
         switch(event.key)
