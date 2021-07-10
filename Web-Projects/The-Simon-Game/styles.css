@@ -1,6 +1,7 @@
 body{
     background-color: #011F3F;
     min-width: fit-content;
+    min-width: -moz-fit-content;
 }
 
 
