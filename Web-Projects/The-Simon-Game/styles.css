@@ -1,0 +1,64 @@
+body{
+    background-color: #011F3F;
+    min-width: fit-content;
+}
+
+
+.col-lg-6{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+    display: inline-flex;
+    border-radius: 20%;
+    border: black 10px solid;
+}
+
+.container-fluid{
+    text-align: center;
+    margin: auto;
+    width: 100wh;
+    /* height: 100vh; */
+}
+.row{
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+.button-1{
+    background-color: green;
+}
+
+.button-2{
+    background-color: red;
+}
+
+.button-3{
+    background-color: blue;
+}
+
+.button-4{
+    background-color: yellow;
+}
+
+.pressed{
+    background-color: grey;
+}
+
+.display{
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-family: 'Press Start 2P', cursive;
+    color: #FEF2BF;
+}
+
+
+.footer{
+    margin-top: 30px;
+    color: #FEF2BF;
+    text-align: center;
+    line-height: 2;
+}
