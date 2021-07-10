@@ -6,8 +6,8 @@ body{
 
 
 .col-lg-6{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: black;
     margin: auto;
     margin-top: 50px;
@@ -42,6 +42,27 @@ body{
 
 .button-4{
     background-color: yellow;
+}
+
+@media (max-width:1200px) {
+    .button-1{
+        margin-right: 10px;
+    }
+    
+    .button-2{
+        margin-left: 10px;
+    }
+    
+    .button-3{
+        margin-right: 10px;
+    }
+    
+    .button-4{
+        margin-left: 10px;
+    }
+    .col-lg-6{
+        margin-top: 20px;
+    }
 }
 
 .pressed{
