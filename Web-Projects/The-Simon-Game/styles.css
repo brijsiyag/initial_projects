@@ -67,6 +67,7 @@ body{
 
 .pressed{
     background-color: grey;
+    box-shadow: #a8a596 0px 0px 20px 5px;
 }
 
 .display{
@@ -75,6 +76,7 @@ body{
     margin: 50px auto 50px auto;
     font-family: 'Press Start 2P', cursive;
     color: #FEF2BF;
+    text-shadow: rgb(255, 0, 0) 3px 3px 100px 100px;
 }
 
 
